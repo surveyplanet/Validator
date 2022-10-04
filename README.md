@@ -62,35 +62,35 @@ if (errors.length) {
 
 ### Rules
 
-| Name                  | Violation Message                                                                   | Description                                                       |
-| --------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------ |
-| `required`            | "The %s field is required."                                                         | Must not be empty.                                                |
-| `matches[String]`     | "The %s field does not match the %s field."                                         | Must match another field value.                                   |
-| `url`                 | "The %s field must contain a valid url."                                            | Must be a valid url.                                              |
-| `email`               | "The %s field must contain a valid email address."                                  | Must be a valid email address.                                    |
-| `emails`              | "The %s field must contain all valid email addresses."                              | Must be a comma separated list of valid email addresses.          |
-| `minLength[Number]`   | "The %s field must be at least %s characters in length."                            | Must be at least X characters long.                               |
-| `maxLength[Number]`   | "The %s field must not exceed %s characters in length."                             | Must be no longer than X characters.                              |
-| `exactLength[Number]` | "The %s field must be exactly %s characters in length."                             | Must be exactly X characters long.                                |
-| `greaterThan[Number]` | "The %s field must contain a number greater than %s."                               | Must be greater than X.                                           |
-| `equals[Number]`      | "The %s field must equal %s."                                                       | Must be equal to X.                                               |
-| `lessThan[Number]`    | "The %s field must contain a number less than %s."                                  | Must be less than X.                                              |
-| `alpha`               | "The %s field must only contain alphabetical characters."                           | Must only contain alphabetical characters (A-z).                  |
-| `alphaNumeric`        | "The %s field must only contain alpha-numeric characters."                          | Must only contain alpha-numeric characters (A-z, 0-9).            |
-| `alphaDash`           | "The %s field must only contain alpha-numeric characters, underscores, and dashes." | Must only contain alpha-numeric characters.                       | underscores, or dashes", |
-| `numeric`             | "The %s field must only contain numbers."                                           | Must be a whole number.                                           |
-| `integer`             | "%s must be a whole number."                                                        | Must be an integer.                                               |
-| `decimal`             | "The %s field must contain a decimal number."                                       | Must be a valid decimal.                                          |
-| `ip`                  | "The %s field must contain a valid IP address."                                     | Must be a valid IP address.                                       |
-| `base64`              | "The %s field must contain a base64 string."                                        | Must be a base64 string.                                          |
-| `cvc`                 | "The %s field must contain a valid CVC."                                            | Must be a valid credit card cvc.                                  |
-| `creditCard`          | "The %s field must contain a valid credit card number."                             | Must be a valid credit card number.                               |
-| `phone`               | "The %s field must contain a valid phone number."                                   | Must be a valid phone number.                                     |
-| `fileType`            | "The %s field must contain only %s files."                                          | Must be a comma separated list of file types (e.g.: gif,png,jpg). |
-| `hasNumber`           | "The %s field must contain at least one number."                                    | Must contain a number.                                            |
-| `hasUpper`            | "The %s field must contain at least one upper case letter."                         | Must contain an upper case letter.                                |
-| `hasLower`            | "The %s field must contain at least one lower case letter."                         | Must contain a lower case letter.                                 |
-| `custom[Regex]`       | "The %s field is invalid."                                                          | Must match a Regular Expression.                                  |
+| Name                  | Violation Message                                                                   | Description                                                        |
+| --------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `required`            | "The %s field is required."                                                         | Must not be empty.                                                 |
+| `matches[String]`     | "The %s field does not match the %s field."                                         | Must match another field value.                                    |
+| `url`                 | "The %s field must contain a valid url."                                            | Must be a valid url.                                               |
+| `email`               | "The %s field must contain a valid email address."                                  | Must be a valid email address.                                     |
+| `emails`              | "The %s field must contain all valid email addresses."                              | Must be a comma separated list of valid email addresses.           |
+| `minLength[Number]`   | "The %s field must be at least %s characters in length."                            | Must be at least X characters long.                                |
+| `maxLength[Number]`   | "The %s field must not exceed %s characters in length."                             | Must be no longer than X characters.                               |
+| `exactLength[Number]` | "The %s field must be exactly %s characters in length."                             | Must be exactly X characters long.                                 |
+| `greaterThan[Number]` | "The %s field must contain a number greater than %s."                               | Must be greater than X.                                            |
+| `equals[Number]`      | "The %s field must equal %s."                                                       | Must be equal to X.                                                |
+| `lessThan[Number]`    | "The %s field must contain a number less than %s."                                  | Must be less than X.                                               |
+| `alpha`               | "The %s field must only contain alphabetical characters."                           | Must only contain alphabetical characters (A-z).                   |
+| `alphaNumeric`        | "The %s field must only contain alpha-numeric characters."                          | Must only contain alpha-numeric characters (A-z, 0-9).             |
+| `alphaDash`           | "The %s field must only contain alpha-numeric characters, underscores, and dashes." | Must only contain alpha-numeric characters, underscores, or dashes |
+| `numeric`             | "The %s field must only contain numbers."                                           | Must be a whole number.                                            |
+| `integer`             | "%s must be a whole number."                                                        | Must be an integer.                                                |
+| `decimal`             | "The %s field must contain a decimal number."                                       | Must be a valid decimal.                                           |
+| `ip`                  | "The %s field must contain a valid IP address."                                     | Must be a valid IP address.                                        |
+| `base64`              | "The %s field must contain a base64 string."                                        | Must be a base64 string.                                           |
+| `cvc`                 | "The %s field must contain a valid CVC."                                            | Must be a valid credit card cvc.                                   |
+| `creditCard`          | "The %s field must contain a valid credit card number."                             | Must be a valid credit card number.                                |
+| `phone`               | "The %s field must contain a valid phone number."                                   | Must be a valid phone number.                                      |
+| `fileType`            | "The %s field must contain only %s files."                                          | Must be a comma separated list of file types (e.g.: gif,png,jpg).  |
+| `hasNumber`           | "The %s field must contain at least one number."                                    | Must contain a number.                                             |
+| `hasUpper`            | "The %s field must contain at least one upper case letter."                         | Must contain an upper case letter.                                 |
+| `hasLower`            | "The %s field must contain at least one lower case letter."                         | Must contain a lower case letter.                                  |
+| `custom[Regex]`       | "The %s field is invalid."                                                          | Must match a Regular Expression.                                   |
 
 ## Methods
 
