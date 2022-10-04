@@ -12,6 +12,7 @@ npm install --save @surveyplanet/validator
 
 ```js
 import Validator from '@surveyplanet/validator'
+
 validator = new Validator(
 	[
 		{
@@ -40,12 +41,17 @@ validator = new Validator(
 		},
 	]
 );
+
 validator.showValidationErrors = true;
+
 const errors = validator.validate();
+
 if (errors.length) {
 	return alert(errors[0].message)
 }
+
 // process form...
+
 ```
 
 ## Options
@@ -53,8 +59,8 @@ if (errors.length) {
 | Param          | Type             | Description                                                                           |
 | -------------- | ---------------- | ------------------------------------------------------------------------------------- |
 | fields         | `Array.<Object>` | A collection of field inputs to validate.                                             |
+| fields.name    | `String`         | Then input name (required).                                                           |
 | fields.id      | `String`         | The input id.                                                                         |
-| fields.name    | `String`         | Then input name (required),                                                           |
 | fields.label   | `String`         | The input label used to parse error message (if not provided filed name is used).     |
 | fields.rules   | `String\|Array`  | A single rule name or a list of rule names to use for validation default: 'required'. |
 | fields.value   | `Array`          | Input value (required if input name is not provided).                                 |
