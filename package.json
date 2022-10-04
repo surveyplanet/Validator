@@ -1,0 +1,34 @@
+{
+    "name": "@surveyplanet/validator",
+    "version": "1.0.0",
+    "description": "Validate html forms.",
+    "main": "validator.js",
+    "module": "validator.js",
+    "type": "module",
+    "scripts": {
+        "test": "./node_modules/.bin/mocha tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/surveyplanet/validator.git"
+    },
+    "keywords": [
+        "form",
+        "validate",
+        "validations",
+        "error",
+        "alert"
+    ],
+    "author": "Jonah Werre <jonahwerre@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/surveyplanet/validator/issues"
+    },
+    "homepage": "https://github.com/surveyplanet/validator#readme",
+    "devDependencies": {
+        "chai": "^4.3.6",
+        "eslint": "^8.24.0",
+        "jsdom": "^20.0.0",
+        "mocha": "^10.0.0"
+    }
+}
